@@ -1,7 +1,54 @@
 const { Student } = require('../models');
 
 const studentdata = [
-
+{
+    name: 'David Beckham',
+    grade: 'Sophomore',
+    
+  },
+  {
+    name: 'Marcus Rashford',
+    grade: 'Freshman',
+    
+  },
+  {
+    name: 'Chrisian Pulisic',
+    grade: 'Freshman',
+    
+  },
+  {
+    name: 'Steve Nash',
+    grade: 'Junior',
+   
+  },
+  {
+    name: 'Serena Williams',
+    grade: 'Sophomore',
+    
+  },
+  {
+    name: 'Martha Stewart',
+    grade: 'Senior',
+    
+  },
+  {
+    name: 'Simone Biles',
+    grade: 'Junior',
+  },
+  {
+    name: 'Alex Morgan',
+    grade: 'Junior',
+    
+  },
+  {
+    name: 'Connor McGreggor',
+    grade: 'Senior',
+    
+  },
+  {
+    name: 'Stephan Curry',
+    grade: 'Freshman',
+},
 
 
 ];
