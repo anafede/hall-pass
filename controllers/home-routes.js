@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Student, Class, Grade } = require('../models');
+const { Student, Class } = require('../models');
 
 // GET all students for homepage
 router.get('/', async (req, res) => {
@@ -9,7 +9,11 @@ router.get('/', async (req, res) => {
             include: [
                 {
                     model: Student,
-                    attributes: [],
+                    attributes: [
+                        'id',
+                        'student_name',
+                        'grade_name'
+                    ],
                 },
             ],
         });
@@ -35,8 +39,12 @@ router.get('/student/:id', async (req, res) => {
         findByPk(req.params.id, {
             include: [
                 {
-                    model: Student,
-                    attributes: [],
+                    model: Class,
+                    attributes: [
+                        'id',
+                        'class_name',
+                        'grade'
+                    ],
                 },
             ],
         });
