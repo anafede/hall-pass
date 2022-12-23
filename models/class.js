@@ -17,7 +17,7 @@ Class.init(
       allowNull: false
     }, 
     grade: {
-      // type:
+      type: DataTypes.STRING,
       allowNull: false,
     }
   },
