@@ -1,6 +1,6 @@
 const { Student } = require('../models');
 
-const studentdata = [
+const studentData = [
 {
     name: 'David Beckham',
     grade: 'Sophomore',
@@ -53,6 +53,6 @@ const studentdata = [
 
 ];
 
-const seedStudent = () => Student.bulkCreate(studentdata);
+const seedStudent = () => Student.bulkCreate(studentData);
 
 module.exports = seedStudent;
