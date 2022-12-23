@@ -1,6 +1,6 @@
 const { Grade } = require('../models');
 
-const gradedata = [
+const gradeData = [
 {
     letter_grade: 'A+',
     
@@ -52,6 +52,6 @@ const gradedata = [
 
 ];
 
-const seedGrade = () => Grade.bulkCreate(gradedata);
+const seedGrade = () => Grade.bulkCreate(gradeData);
 
 module.exports = seedGrade;

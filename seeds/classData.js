@@ -1,6 +1,6 @@
 const { Class } = require('../models');
 
-const classdata = [
+const classData = [
 {
     class_subject: 'Biology',
     
@@ -43,6 +43,6 @@ const classdata = [
 
 ];
 
-const seedclass = () => Class.bulkCreate(classdata);
+const seedclass = () => Class.bulkCreate(classData);
 
 module.exports = seedclass;
