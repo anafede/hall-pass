@@ -2,42 +2,42 @@ const { Class } = require('../models');
 
 const classData = [
 {
-    class_subject: 'Biology',
+    class_name: 'Biology',
     
   },
   {
-    class_subject: 'History',
+    class_name: 'History',
     
   },
   {
-    class_subject: 'Physics',
+    class_name: 'Physics',
     
   },
   {
-    class_subject: 'English',
+    class_name: 'English',
    
   },
   {
-    class_subject: 'Geometry',
+    class_name: 'Geometry',
     
   },
   {
-    class_subject: 'Spanish',
+    class_name: 'Spanish',
     
   },
   {
-    class_subject: 'Chemisty',
+    class_name: 'Chemisty',
   },
   {
-    class_subject: 'Italian',
+    class_name: 'Italian',
     
   },
   {
-    class_subject: 'Physical Education',
+    class_name: 'Physical Education',
     
   },
   {
-    class_subject: 'Algebra',
+    class_name: 'Algebra',
   },
 
 

@@ -1,53 +1,63 @@
 const { Student } = require('../models');
 
-const studentData = [
+const studentData = [ 
 {
-    name: 'David Beckham',
-    grade: 'Sophomore',
+    first_name: 'David',
+    last_name: 'Beckham',
+    grade_name: 'Sophomore',
     
   },
   {
-    name: 'Marcus Rashford',
-    grade: 'Freshman',
+    first_name: 'Marcus',
+    last_name: ' Rashford',
+    grade_name: 'Freshman',
     
   },
   {
-    name: 'Chrisian Pulisic',
-    grade: 'Freshman',
+    first_name: 'Chrisian',
+    last_name: 'Pulisic',
+    grade_name: 'Freshman',
     
   },
   {
-    name: 'Steve Nash',
-    grade: 'Junior',
+    first_name: 'Steve',
+    last_name: ' Nash',
+    grade_name: 'Junior',
    
   },
   {
-    name: 'Serena Williams',
-    grade: 'Sophomore',
+    first_name: 'Serena ',
+    last_name: 'Williams',
+    grade_name: 'Sophomore',
     
   },
   {
-    name: 'Martha Stewart',
-    grade: 'Senior',
+    first_name: 'Martha ',
+    last_name: 'Stewart',
+    grade_name: 'Senior',
     
   },
   {
-    name: 'Simone Biles',
-    grade: 'Junior',
+    first_name: 'Simone',
+    last_name: 'Biles',
+    grade_name: 'Junior',
   },
   {
-    name: 'Alex Morgan',
-    grade: 'Junior',
+    first_name: 'Alex',
+    last_name: 'Morgan',
+    grade_name: 'Junior',
     
   },
   {
-    name: 'Connor McGreggor',
-    grade: 'Senior',
+    first_name: 'Connor',
+    last_name: 'McGreggor',
+    grade_name: 'Senior',
     
   },
   {
-    name: 'Stephan Curry',
-    grade: 'Freshman',
+    first_name: 'Stephen',
+    last_name: 'Curry',
+    grade_name: 'Freshman',
 },
 
 
