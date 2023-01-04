@@ -5,18 +5,7 @@ const { Student, Class } = require('../models');
 router.get('/', async (req, res) => {
     try {
         const dbStudentData = await Student. 
-        findAll({
-            include: [
-                {
-                    model: Student,
-                    attributes: [
-                        'id',
-                        'student_name',
-                        'grade_name'
-                    ],
-                },
-            ],
-        });
+        findAll();
 
         const students = dbStudentData.map
         ((student) =>

@@ -1,3 +1,19 @@
 <section class="card">
   <a href="/student/{{id}}">
-    <header>{{}}</header>
+    <header>{{last_name ', ' first_name}}</header>
+
+    <div class="card-body">
+        <table border = "1">
+          <tr>
+            <td>Class</td>
+            <td>Grade</td>
+          </tr>
+          <tr>
+            <td>{{course_name}}</td>
+            <td>{{course_grade}}</td>
+          </tr>
+        </table>
+      </a>
+    </div>
+  </a>
+</section>
