@@ -25,7 +25,7 @@ Student.init(
       allowNull: false
     },
     course_name: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING, 
       references: {
         model: 'class',
         key: 'class_name',
@@ -35,9 +35,16 @@ Student.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'class',
-        id: 'grade',
+        key: 'grade',
       },
     },
+    // student_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'class',
+    //     key: ''
+    //   }
+    // }
   },
   {
     sequelize,

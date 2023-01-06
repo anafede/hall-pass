@@ -14,11 +14,13 @@ Class.init(
     },
    class_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      unique: true
     }, 
     grade: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      unique: true
     }
   },
   {
