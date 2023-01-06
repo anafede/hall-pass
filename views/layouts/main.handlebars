@@ -25,6 +25,13 @@
         <aside>
             <h2>Students</h2>
         </aside>
+        <div class="student">
+            {{{body}}}
+        </div>
+        </main>
+        {{#if loggedIn}}
+        <script src="/js/logout.js"></script>
+        {{/if}}
         <!--Still need to add sections for student/class/grade sections once other handlebars are completed -->
     </main>
 </body>
