@@ -3,11 +3,13 @@ const Class = require('./Class');
 const Student = require('./Student');
 
 Student.hasMany(Class, {
-    foreignKey: 'student_id',
+    foreignKey: 'course_name',
+    foreignKey: 'course_grade'
 });
 
 Class.belongsTo(Student, {
-    foreignKey: 'student_id',
+    foreignKey: 'course_name',
+    foreignKey: 'course_grade'
 });
 
 module.exports = {
