@@ -7,7 +7,7 @@ const seedAll = async () => {
     await sequelize.sync({ force: true });
 
     await seedClass();
-    await seedGrade();
+    // await seedGrade();
     await seedStudent();
     process.exit(0);
 };

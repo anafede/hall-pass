@@ -18,9 +18,11 @@ Class.init(
       unique: true
     }, 
     grade: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      unique: true
+      type: DataTypes.STRING,
+      allowNull: true,
+      unique: true,
+    
+      
     }
   },
   {
