@@ -32,7 +32,7 @@ Student.init(
       },
     },
     course_grade: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: 'class',
         key: 'grade',
