@@ -9,7 +9,7 @@ Class.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      primaryKey: true,
+      // primaryKey: true,
       autoIncrement: true
     },
    class_name: {
@@ -20,9 +20,7 @@ Class.init(
     grade: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      unique: true,
-    
-      
+      primaryKey: true
     }
   },
   {

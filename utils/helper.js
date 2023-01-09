@@ -3,7 +3,7 @@ module.exports = {
         if (!input) {
       throw new Error('no grade provided');
     }
-    let grade;
+    // let grade;
     // Return a letter grade if a number grade was passed
     // Ex. 95 => 'A'
     if (typeof input === 'number') {
