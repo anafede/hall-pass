@@ -31,27 +31,13 @@ const sess = {
   }),
 };
 
-// passport
-const passport = require('passport')
-const RedisStore = require('connect-redis')(session)
 
-app.use(session({
-  store: new RedisStore({
-    url: config.redisStore.url
-  }),
-  secret: config.redisStore.secret,
-  resave: false,
-  saveUninitialized: false
-}))
-
-app.use(passport.initialize())
-app.use(passport.session())
 
 app.use(session(sess));
 //
 
 const hbs = exphbs.create({ helpers });
-
+//
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
