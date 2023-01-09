@@ -52,6 +52,35 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
+app.get('/api/studentData', (req, res) => {
+  console.info(`${req.method} request received for student data`);
+
+  readFromFile('./public/seeds/studentData.json').then((data) => res.json(JSON.parse(data)));
+});
+
+app.post('/api/studentData', (req, res) => {
+  console.info(`${req.method} request received to add a student`);
+
+  const { first_name, last_name, grade_name } = req.body;
+
+  if (first_name && last_name && grade_name) {
+    const newStudent = {
+      first_name,
+      last_name,
+      grade_name,
+    };
+
+    readAndAppend(newStudent, './public/seeds/studentData.json');
+
+    const response = {
+      status: 'student added successfully',
+      body: newStudent,
+    }
+  } else {
+    res.errored('Error in adding student')
+  }
+});
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
     console.log(
