@@ -53,6 +53,24 @@ router.get('/student/:id', async (req, res) => {
     }
 });
 
+// GET classes for each student
+router.get('/class/:id', async (req, res) =>
+{
+    try {
+        const dbClassData = await Class.
+        findByPk(req.params.id);
+
+        const classes = dbClassData.get({ plain: true });
+        res.render('class', { 
+            classes, 
+            loggedIn: req.session.loggedIn 
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
 // Login route
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
