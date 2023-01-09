@@ -15,6 +15,7 @@ const helpers = require('./utils/helper');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const hbs = exphbs.create({ helpers });
 
 // Set up session and connect to our Sequelize database
 const sess = {
@@ -41,7 +42,7 @@ app.use(session(sess));
 app.use(passport.initialize());
 app.use(passport.session());
 
-const hbs = exphbs.create({ helpers });
+
 //
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
@@ -80,6 +81,7 @@ app.post('/api/studentData', (req, res) => {
     res.errored('Error in adding student')
   }
 });
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>

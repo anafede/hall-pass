@@ -13,19 +13,17 @@
 <body>
     <header>
         <p class =  "mt-3 text-center text-light fs-1 font-weight-bold">Hall Pass Grade Portal </p>
+        <p class = "mt-2 text-center text-light fs-4"> Access to grades for teachers and administrators</p>
     </header>
     <nav class = "text-center mb-3">
-        <a href ="/ ">Home</a>
         {{#if loggedIn}}
+        <a href = "/homepage">Home</a>
         <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
         <a href="/login">Login or Sign Up</a>
         {{/if}}
     </nav>
     <main>
-        <aside>
-            <h2></h2>
-        </aside>
         <div class="student">
             {{{body}}}
         </div>
