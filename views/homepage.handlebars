@@ -1,7 +1,9 @@
-{{#each users as |user| }}
+{{#each students as |student| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
-    <h2> {{user.name}}</h2>
+    <h2> {{user.name}}
+      <a href="/class/{{Class.id}}">{{Class.class_name}} </a>
+    </h2>
   </div>
   <div class="col-md-6">
     <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>

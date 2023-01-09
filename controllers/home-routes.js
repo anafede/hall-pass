@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Student, Class } = require('../models');
+const { Student, Class, User } = require('../models');
 
 var passport = require('../authenticate/passport')
 
@@ -75,5 +75,9 @@ router.get('/login', (req, res) => {
     }
     res.render('login');
 });
+
+
+
+  
 
 module.exports = router;
