@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+// passport
+const passport = require('./authenticate/passport');
 
 // Initialize Sequelize with session store
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -31,6 +33,8 @@ const sess = {
   }),
 };
 
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 app.use(session(sess));
