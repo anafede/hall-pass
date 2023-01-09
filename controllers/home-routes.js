@@ -9,8 +9,7 @@ router.get('/', async (req, res) => {
         const dbStudentData = await Student. 
         findAll();
 
-        const students = dbStudentData.map
-        ((student) =>
+        const students = dbStudentData.map((student) =>
             student.get({ plain: true })
         );
         res.render('homepage', {
@@ -26,8 +25,7 @@ router.get('/', async (req, res) => {
 // GET one student
 router.get('/student/:id', async (req, res) => {
     try {
-        const dbStudentData = await Student.
-        findByPk(req.params.id, {
+        const dbStudentData = await Student.findByPk(req.params.id, {
             include: [
                 {
                     model: Class,
@@ -57,8 +55,7 @@ router.get('/student/:id', async (req, res) => {
 router.get('/class/:id', async (req, res) =>
 {
     try {
-        const dbClassData = await Class.
-        findByPk(req.params.id);
+        const dbClassData = await Class.findByPk(req.params.id);
 
         const classes = dbClassData.get({ plain: true });
         res.render('class', { 
