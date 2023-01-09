@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Student, Class } = require('../models');
 
+var passport = require('../authenticate/passport')
+
 // GET all students for homepage
 router.get('/', async (req, res) => {
     try {
