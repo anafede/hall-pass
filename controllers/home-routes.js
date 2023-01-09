@@ -6,8 +6,7 @@ var passport = require('../authenticate/passport')
 // GET all students for homepage
 router.get('/', async (req, res) => {
     try {
-        const dbStudentData = await Student. 
-        findAll();
+        const dbStudentData = await Student.findAll();
 
         const students = dbStudentData.map((student) =>
             student.get({ plain: true })
