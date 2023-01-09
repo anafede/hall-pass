@@ -33,12 +33,13 @@ const sess = {
   }),
 };
 
-app.use(passport.initialize());
-app.use(passport.session());
+
 
 
 app.use(session(sess));
-//
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 const hbs = exphbs.create({ helpers });
 //
@@ -58,3 +59,4 @@ sequelize.sync({ force: false }).then(() => {
     )
   );
 });
+
