@@ -3,7 +3,9 @@
 	padding: 0;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #01431c, #9fe998, #01431c);
+	background: #6a11cb;
+	background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+	background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
  }
  nav a{
     color: white;
@@ -12,5 +14,3 @@
  nav a:hover {
     color:black;
  }
-
-  
